@@ -2,11 +2,109 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Дизайн-студия «Нёрдс»</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+	<header class="main-header">
+		<a class="main-header-logo">
+          <img src="img/index-logo.svg" width="165" height="65" alt="Логотип Нёрдс">
+        </a>
+        <nav class="main-nav">
+        	<ul class="site-nav">
+        		<li><a href="about-us.html">Студия</a></li>
+        		<li><a href="clients.html">Клиенты</a></li>
+        		<li><a href="catalog.html">Магазин</a></li>
+        		<li><a href="contacts.html">Контакты</a></li>
+        	</ul>
+        	<a class="cart-link" href="cart.html"><span class="cart-logo"></span>Корзина</a>
+        </nav>
+        <!-- Слайдер -->
+	</header>
+	<main class="container">
+		<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
+		<section class="services">
+			<h2 class="visually-hidden">Услуги</h2>
+			<ul class="services-list">
+				<li class="service-item">
+					<a href="catalog.html" class="web-sites">
+						<img src="img/web-sites.svg" width="300" height="146" alt="">
+						<h3>Веб-сайты</h3>
+					</a>
+					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<a href="catalog.html" class="btn">Заказать</a>
+				</li>
+				<li class="service-item">
+					<a href="catalog.html" class="apps">
+						<img src="img/apps.svg" width="300" height="146" alt="">
+						<h3>Приложения</h3>
+					</a>
+					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+					<a href="catalog.html" class="btn">Заказать</a>
+				</li>
+				<li class="service-item">
+					<a href="catalog.html" class="presentaions">
+						<img src="img/presentaions.svg" width="300" height="146" alt="">
+						<h3>Презентации</h3>
+					</a>
+					<p>Вы даже не подозреваете,  насколько вы изумительны!</p>
+					<a href="catalog.html" class="btn">Заказать</a>
+				</li>
+			</ul>
+		</section>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+		<!-- Эту часть случайно начал делать, так как не увидел в задании, что пока не требуется -->
+		<div class="features">
+			<h2 class="visually-hidden">Преимущества</h2>
+			<section class="info-features">
+				<b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
+				<h4 class="about-us">Выполняем заказы на разаработку</h4> <!-- Или лучше p использовать вместо h4? -->
+				<ul class="features-list">
+					<li>Веб-сайтов любой сложности</li>  
+					<li>Мобильных приложений для iOS и Android</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+			</section>
+			<section class="info">
+				<img src="img/logo-info.svg" alt="Логотип Нёрдс" width="360" height="208">
+				<h4 class="about-us">с 2004 года Любим точность во всем:</h4>
+				<table>
+					<tr>
+						<th>146%</th>
+						<th>100%</th>
+						<th>50%</th>
+					</tr>
+					<tr>
+						<td>Уровень самоотдачи</td>
+						<td>Соблюдение сроков</td>
+						<td>Минимальная предоплата</td>
+					</tr>
+				</table>
+			</section>
+		</div>
+		<section class="partners">
+			<ul class="partners-list">
+				<li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.svg" alt="Логотип htmlacademy" width="260" height="180"></a></li>
+				<li><a href="#"><img src="img/barbershop.svg" alt="Логотип barbershop" width="260" height="180"></a></li>
+				<li><a href="#"><img src="img/pink" alt="Логотип pink" width="260" height="180"></a></li>
+				<li><a href="#"><img src="img/mishka.svg" alt="Логотип mishka" width="260" height="180"></a></li>
+			</ul>
+		</section>
+		<!-- Карта -->
+	</main>
+	<footer class="main-footer">
+		<div class="footer-social">
+			<ul>
+          		<li><a class="social-button" href="#">Вконтакте</a></li>
+          		<li><a class="social-button" href="#">Фейсбук</a></li>
+          		<li><a class="social-button" href="#">Инстаграм</a></li>
+        	</ul>
+		</div>
+		<p class="footer-sale">
+			<b class="footer-b">Давайте дружить, это выгодно!</b>
+			Скидка 10% для друзей из социальных сетей.
+		</p>
+	</footer>
   </body>
 </html>
