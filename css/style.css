@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #283136;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font: inherit;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    vertical-align: middle;
+    
+    background-color: #fb565a;
+    border: none;
+}
+
+.main-header {
+    background-color: #eeeeee;
+}
+
+.main-header-logo:hover {
+    opacity: 0.8; 
+}
+
+.main-header-logo:click {
+    opacity: 0.3; 
+}
+
+.main-nav {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.main-nav a {
+    color: #000000;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    color: #fb565a;
+}
+
+.main-nav a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-current a {
+    border-bottom: 2px solid #fb565a;
+}
+
+.site-nav {
+    list-style: none;
+}
+
+.slider-list {
+    list-style: none;
+}
+
+.slider-item b {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.slider-btn:hover,
+.slider-btn:focus, {
+    background-color: #e74246;
+}
+
+.slider-btn:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d7373b;
+}
+
+.services {
+    border-bottom: 2px solid #eeeeee;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.btn-web-sites:hover,
+.btn-web-sites:focus {
+    background-color: #e74246;
+}
+
+.btn-web-sites:active {
+    background-color: #d7373b;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-apps {
+    background-color: #00ca74;
+}
+
+.btn-apps:hover,
+.btn-apps:focus {
+    background-color: #00bc6c;
+}
+
+.btn-web-sites:active {
+    background-color: #00aa62;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-presentations {
+    background-color: #efc84a;
+}
+
+.btn-presentations:hover,
+.btn-presentations:focus {
+    background-color: #eab534;
+}
+
+.btn-presentations:active {
+    background-color: #e5a722;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.features {
+    border-bottom: 2px solid #eeeeee;
+}
+
+.info-features b {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.about-us {
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.info th {
+    font-size: 45px;
+    line-height: 10.6px;
+    font-weight: 700;
+    color: #000000;
+}
+
+/*А вот верхний индекс процентов как лучше оформить через тег <sup> или отдельно выделить их спанами? или вообще в CSS это можно оформить?*/
+
+.partners {
+    border-bottom: 2px solid #eeeeee;
+}
+
+.partners-list {
+    list-style: none;
+}
+
+.partners-list a {
+    opacity: 0.2;
+}
+
+.partners-list li {
+    line-height: 52px;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.partners-list a:hover,
+.partners-list a:focus {
+    opacity: 1;
+}
+
+.partners-list a:active {
+    opacity: 0.1;
+}
+
+.name-location {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.adress-location,
+.phone-location {
+    line-height: 18px;
+    color: #666666;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.footer-sale {
+    line-height: 22px;
+    color: #444444;
+}
+
+.footer-b {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.modal-write-us {
+    background-color: #ffffff;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal-write-us h2 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.write-us input,
+.write-us textarea {
+    font: inherit;
+    color: rgba(68, 68, 68, 0.5);
+
+    background-color: transparent;
+    border: 2px solid #d7dcde;
+    border-radius: 2px;
+}
+
+.write-us input:hover,
+.write-us textarea:hover {
+    border-color: #b4b9bb;
+}
+
+.write-us input:focus,
+.write-us textarea:focus {
+    border-color: #000000;
+    color: #444444;
+}
+
+/*Здесь не понял, какой псевдокласс необходимо применять.
+.write-us input: , 
+.write-us textarea: {
+    border-color: #e74246;
+    color: #e74246;
+}
+*/
+
+.write-us label {
+    font: inherit;
+
+    line-height: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.modal-close {
+    background-image: url(img/close-cross.svg);
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close:hover {
+    opacity: 0.1;
+}
+
+.page-title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+
+    color: #000000;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.filter ul {
+    list-style: none;
+    line-height: 20px;
+}
+
+.filter-input:disabled + label {
+    color: rgba(40, 49, 54, 0.3);
+
+    opacity: 0.3;
+}
+
+.filter-input {
+    opacity: 0.4;
+}
+
+.filter-input:hover {
+    opacity: 1;
+}
+
+.filter-option label,
+.filter-option label:hover {
+    color: 283136;
+}
+
+.filter-btn {
+    color: #000000;
+
+    background-color: #eeeeee;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.catalog-item-about {
+    line-height: 18px;
+
+    color: #666666;
+}
+
+/*.catalog-item-info {  Так и не понял как сделать что бы информация появлялась при наведении
+    display: none;
+}
+
+.catalog-item-image:hover + catalog-item-info {
+    display: block;
+}*/
+
+.catalog-item-price:hover {
+    background-color: #e74246;
+}
+
+.catalog-item-price:active {
+    background-color: #d7373b;
+}

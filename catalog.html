@@ -3,10 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>Дизайн-студия «Нёрдс»</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="main-header">
+        <header class="main-header main-header-catalog">
             <a href="index.html" class="main-header-logo">
                 <img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип Нёрдс">
             </a>
@@ -19,7 +21,7 @@
                 </ul>
                 <a class="cart-link" href="cart.html">Корзина</a>
             </nav>
-            <h1>Магазин готовых шаблонов</h1>
+            <h1 class="page-title">Магазин готовых шаблонов</h1>
         </header>
         <main class="container">
             <section class="filters">
@@ -62,9 +64,8 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <button type="submit" class="filter-button button">Показать</button>
+                    <button type="submit" class="filter-btn btn">Показать</button>
                 </form>
-                <button type="submit">Показать</button>
             </section>
             <section class="catalog">
                 <h2 class="visually-hidden">Список шаблонов сайтов, приложений и презентаций</h2>
@@ -79,7 +80,7 @@
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <article>
-                            <a href="catalog-item.html"><img src="img/img-sedona.jpg" alt="Шаблон сайта Sedona" width="360" height="576"></a>
+                            <a class="catalog-item-image" href="catalog-item.html"><img src="img/img-sedona.jpg" alt="Шаблон сайта Sedona" width="360" height="576"></a>
                             <div class="catalog-item-info visually-hidden">
                                 <h3><a href="catalog-item.html" class="catalog-item-title">Sedona</a></h3>
                                 <p class="catalog-item-about">Информационный сайт<br>для туристов</p>
