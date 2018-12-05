@@ -35,7 +35,7 @@ a {
     opacity: 0.8; 
 }
 
-.main-header-logo:click {
+.main-header-logo:active {
     opacity: 0.3; 
 }
 
@@ -261,13 +261,14 @@ a {
     color: #444444;
 }
 
-/*Здесь не понял, какой псевдокласс необходимо применять.
-.write-us input: , 
-.write-us textarea: {
+.write-us input:invalid , 
+.write-us textarea:invalid {
+    box-shadow: none;
+
     border-color: #e74246;
     color: #e74246;
 }
-*/
+
 
 .write-us label {
     font: inherit;
@@ -278,8 +279,9 @@ a {
 }
 
 .modal-close {
-    background-image: url(img/close-cross.svg);
+    background-image: url("img/close-cross.svg");
     background-repeat: no-repeat;
+    background-position: 0 0;
     opacity: 0.3;
 }
 
@@ -361,13 +363,13 @@ a {
     color: #666666;
 }
 
-/*.catalog-item-info {  Так и не понял как сделать что бы информация появлялась при наведении
+.catalog-item-info {
     display: none;
 }
 
-.catalog-item-image:hover + catalog-item-info {
+.catalog-item:hover .catalog-item-info {
     display: block;
-}*/
+}
 
 .catalog-item-price:hover {
     background-color: #e74246;
