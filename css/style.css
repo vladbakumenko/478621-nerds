@@ -14,6 +14,20 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .btn {
     font: inherit;
     font-size: 16px;
@@ -31,6 +45,23 @@ a {
     background-color: #eeeeee;
 }
 
+.main-header-wrapper {
+    display: flex;
+
+
+    width: 100%;
+}
+
+.main-header-logo {
+    dispaly: block;
+
+    width: 160px;
+    height: 65px;
+
+    margin-right: 200px;
+    margin-top: 49px;
+}
+
 .main-header-logo:hover {
     opacity: 0.8; 
 }
@@ -45,6 +76,11 @@ a {
     font-weight: 500;
     color: #000000;
     text-transform: uppercase;
+
+    width: 800px;
+    margin-top: 75px;
+
+    display: flex;
 }
 
 .main-nav a {
@@ -66,6 +102,20 @@ a {
 
 .site-nav {
     list-style: none;
+
+    width: 440px;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-link {
+    margin-left: auto;
+
+    width: 160px;
 }
 
 .slider-list {
@@ -91,10 +141,22 @@ a {
 
 .services {
     border-bottom: 2px solid #eeeeee;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .services-list {
     list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-item {
+    width: 300px;
 }
 
 .service-item h3 {
@@ -102,6 +164,7 @@ a {
     line-height: 30px;
     font-weight: 700;
     color: #000000;
+    text-transform: uppercase;
 }
 
 .btn-web-sites:hover,
@@ -144,6 +207,17 @@ a {
 
 .features {
     border-bottom: 2px solid #eeeeee;
+
+    padding-bottom: 76px;
+}
+
+.features-wrapper {
+    display: flex;
+}
+
+.info-features {
+    margin-top: 80px;
+    width: 660px;
 }
 
 .info-features b {
@@ -161,6 +235,16 @@ a {
 
 .features-list {
     list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.info {
+    width: 360px;
+    
+    margin-top: 40px;
+    margin-left: auto;
 }
 
 .info th {
@@ -174,20 +258,40 @@ a {
 
 .partners {
     border-bottom: 2px solid #eeeeee;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .partners-list {
     list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vertical-dash {
+    background-image: url("img/vertical-dash.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1;
 }
 
 .partners-list a {
     opacity: 0.2;
 }
 
-.partners-list li {
+/*Вот здесь не совсем понял как сделать справа полоски фиксированной высоту, на спанах получается вставить их фоном чтоли?*/
+
+/*.partners-list li {
     line-height: 52px;
     border-right: 2px solid rgba(0, 0, 0, 0.2);
-}
+}*/
 
 .partners-list a:hover,
 .partners-list a:focus {
@@ -197,6 +301,12 @@ a {
 .partners-list a:active {
     opacity: 0.1;
 }
+
+.map { 
+    background-image: url("img/map.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+} /*Почему не работает фон?*/
 
 .name-location {
     font-size: 18px;
@@ -212,13 +322,34 @@ a {
     color: #666666;
 }
 
+.main-footer {
+    display: flex;
+    align-content: center;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.footer-social {
+    margin-right: 140px;
+    width: 260px;
+}
+
 .footer-social ul {
     list-style: none;
+    
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-sale {
     line-height: 22px;
     color: #444444;
+
+    width: 560px;
 }
 
 .footer-b {
@@ -293,12 +424,31 @@ a {
     opacity: 0.1;
 }
 
+.main-header-catalog {
+    margin-bottom: 58px;
+}
+
 .page-title {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
 
     color: #000000;
+
+    text-align: center;
+
+    padding-bottom: 110px;
+    padding-top: 50px;
+}
+
+.main-catalog-wrapper {
+    display: flex;
+}
+
+.filters {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
 }
 
 .filter fieldset {
@@ -317,6 +467,9 @@ a {
 .filter ul {
     list-style: none;
     line-height: 20px;
+
+    padding: 0;
+    margin: 0;
 }
 
 .filter-input:disabled + label {
@@ -344,8 +497,40 @@ a {
     background-color: #eeeeee;
 }
 
+.sorting {
+    width: 100%;
+}
+
+.sorting-list {
+    padding: 0;
+    margin: 0;
+}
+
+.catalog {
+    margin-left: auto;
+    width: 760px;
+
+    display: flex;
+    flex-direction: column;
+}
+
 .catalog-list {
     list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-item {
+    width: 360px;
+    margin-bottom: 25px;
+}
+
+.catalog-item:nth-child(2n) {
+    margin-left: auto;
 }
 
 .catalog-item-title {
@@ -377,4 +562,11 @@ a {
 
 .catalog-item-price:active {
     background-color: #d7373b;
+}
+
+.pagination-list {
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
 }
