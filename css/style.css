@@ -152,11 +152,15 @@ a {
     margin: 0;
 
     display: flex;
-    justify-content: space-between;
 }
 
 .service-item {
     width: 300px;
+    margin-right: 110px;
+}
+
+.service-item:nth-child {
+    margin-right: 0;
 }
 
 .service-item h3 {
@@ -276,10 +280,9 @@ a {
 }
 
 .vertical-dash {
-    background-image: url("img/vertical-dash.png");
+    background-image: url("../img/vertical-dash.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    opacity: 1;
 }
 
 .partners-list a {
@@ -303,8 +306,9 @@ a {
 }
 
 .map { 
-    background-image: url("img/map.jpg");
-    background-position: 0 0;
+    background-image: url("../img/map.jpg");
+    width: 1440px;
+    margin: 0 auto;
     background-repeat: no-repeat;
 } /*Почему не работает фон?*/
 
@@ -410,7 +414,7 @@ a {
 }
 
 .modal-close {
-    background-image: url("img/close-cross.svg");
+    background-image: url("../img/close-cross.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.3;
@@ -443,6 +447,8 @@ a {
 
 .main-catalog-wrapper {
     display: flex;
+
+    margin-bottom: 60px;
 }
 
 .filters {
@@ -565,6 +571,10 @@ a {
 }
 
 .pagination-list {
+    list-style: none;
+    
+    display: flex;
+
     padding: 0;
     margin: 0;
 
