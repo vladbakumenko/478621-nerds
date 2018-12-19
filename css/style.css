@@ -120,13 +120,30 @@ a {
 
 .slider-list {
     list-style: none;
+
+    padding: 0;
+    margin: 0;
 }
+
+.slider-list li:nth-child(2),
+.slider-list li:nth-child(3) {
+    display: none;
+}
+
+
 
 .slider-item b {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
     color: #000000;
+}
+
+.btn-slider-list {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
 }
 
 .slider-btn:hover,
@@ -307,7 +324,7 @@ a {
 
 .map { 
     background-image: url("../img/map.jpg");
-    width: 1440px;
+    width: 1160px;
     margin: 0 auto;
     background-repeat: no-repeat;
 } /*Почему не работает фон?*/
@@ -366,6 +383,8 @@ a {
 .modal-write-us {
     background-color: #ffffff;
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+
+    display: none;
 }
 
 .modal-write-us h2 {
@@ -528,6 +547,7 @@ a {
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .catalog-item {
@@ -535,9 +555,9 @@ a {
     margin-bottom: 25px;
 }
 
-.catalog-item:nth-child(2n) {
+/*.catalog-item:nth-child(2n) {
     margin-left: auto;
-}
+}*/
 
 .catalog-item-title {
     font-size: 18px;
